@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <title>CV Samsul Maarif</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 1280px;
+            height: 720px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #007B9E;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+        .header .contact-info {
+            margin: 0;
+        }
+        .header .contact-info p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .header .photo {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .header .photo img {
+            border-radius: 8px;
+            width: 150px;
+            height: 150px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        .section {
+            width: 48%;
+        }
+        .section-title {
+            background-color: #007B9E;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .section-content {
+            background-color: #dff1f3;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .section-content p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .section-content p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>SAMSUL MAARIF</h1>
+                <div class="contact-info">
+                    <p> Email: samsulmaariparipin@gmail.com</p>
+                    <p>Phone: <a href="https://wa.me/+6285624642140">+62 8562-4642-140</a></p>
+                    <p>Location: Tasikmalaya</p>
+                </div>
+            </div>
+            {% load static %}
+            <div class="photo">
+                <img src="{% static 'foto.png' %}">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-title"><b>Data Pribadi</b></div>
+                <div class="section-content">
+                    <p><span>Nama:</span> Samsul Maarif</p>
+                    <p><span>Tanggal Lahir:</span> 24 Juli 2005</p>
+                    <p><span>Alamat:</span> Tasikmalaya</p>
+                    <p><span>Jenis Kelamin:</span> Laki-laki</p>
+                    <p><span>Kewarganegaraan:</span> Indonesia</p>
+                    <p><span>Status:</span> Mahasiswa</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title"><b>Pengalaman</b></div>
+                <div class="section-content">
+                    <p>- Anggota OSIS SMA Al Mukrom</p>
+                    <p>- Ketua Pramuka SMA Al Mukrom</p>
+                    <p>- Anggota BEM KEMAKOM FPMIPA UPI</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title"><b>Pendidikan</b></div>
+                <div class="section-content">
+                    <p>- SD Margasari (2010 - 2017)</p>
+                    <p>- SMP Al Mukrom (2017 - 2020)</p>
+                    <p>- SMA Al Mukrom (2020 - 2023)</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title"><b>Keahlian</b></div>
+                <div class="section-content">
+                    <p>- Penggunaan Teknologi</p>
+                    <p>- Manajemen Waktu</p>
+                    <p>- Komunikasi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
